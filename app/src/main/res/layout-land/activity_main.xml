@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_fileName="food.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/what_would_u_like_to_make"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/ingredients"
+                        android:padding="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ingredients_tomato_sugar"
+                        android:textStyle="italic"
+                        android:layout_marginBottom="6dp"
+                        />
+                    <EditText
+                        android:id="@+id/search_item"
+                        android:padding="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_term_e_g_meat"
+                        android:textStyle="italic"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go"
+                android:background="@color/green_light"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

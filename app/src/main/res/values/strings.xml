@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RecipeFinder</string>
+    <string name="recipe_ingredient">recipe_ingredient</string>
+    <string name="recipe_title">recipe_title</string>
+    <string name="recipe_image">recipe_image</string>
+    <string name="ingredient">ingredient</string>
+    <string name="search_recipe">Search Recipe</string>
+    <string name="go">go!!</string>
+    <string name="what_would_u_like_to_make">what would u like to make</string>
+    <string name="ingredients_tomato_sugar">ingredients_tomato_sugar</string>
+    <string name="search_term_e_g_meat">search_term_e_g_meat</string>
+</resources>
